@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Club de video">
+    <meta name="keywords" content="pelicula, series, cine, videos" >
+    <meta property="og:title" content="Club de videos" >
+    <meta>
+    <title>Club de Videos</title>
+</head>
+<body>
+    
+    <div class="logo"> <!--  -->
+        <h1>Club de videos</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li><!-- #= viajar en la paginaALT+SHITF+A  -->
+            <li><a href="#peliculas">Peliculas</a></li>
+            <li><a href="#actores">Actores</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a club de videos</h2>
+            <p>Aqui encontraras las ejores peliculas</p>
+            <button>Ver peliculas</button>
+        </section><!-- la primera seccion es Hero -->
+        <section id="peliculas">
+            <h2>peliculas destacadas</h2>
+            <article itemscope itemtype="https:/mipagina/movie">
+                <img src="images\Alan.jpg" alt="pelicula" itemprop="Pelicula">
+                <h3 itemprop="name">ALAN the movie</h3>
+                <p itemprop="descripcion">VIDA DEL ALAN</p>
+                <span itemprop="Director">Director: ALAN</span>
+                <span itemprop="published">Año: 2026</span>
+            </article>
+            <article itemscope itemtype="https:/mipagina/movie">
+                <img src="images\Alan1.jpg" alt="pelicula" itemprop="Pelicula">
+                <h3 itemprop="name">ALAN the movie 2</h3>
+                <p itemprop="descripcion">VIDA DEL ALAN</p>
+                <span itemprop="Director">Director: ALAN</span>
+                <span itemprop="published">Año: 2026</span>
+            </article>
+            <article itemscope itemtype="https:/mipagina/movie">
+                <img src="images\Alan2.jpg" alt="pelicula" itemprop="Pelicula">
+                <h3 itemprop="name">ALAN the movie 3</h3>
+                <p itemprop="descripcion">VIDA DEL ALAN</p>
+                <span itemprop="Director">Director: ALAN</span>
+                <span itemprop="published">Año: 2026</span>
+            </article>
+        </section>
+        <section id="Testimonios">
+            <h2>Testimonios</h2>
+            <blockquote>
+                "Esta seccion tiene las mejores peliculas"
+                <cite>
+                    Alan Lopez
+                </cite>
+            </blockquote><!--  -->
+            <blockquote>
+                "Me hizo llorar"
+                <cite>
+                    Alan Lopez
+                </cite>
+            </blockquote><!--  -->
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3">
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="">Mensaje</label>
+                    <textarea id="Mensaje" name="mensaje" required minlength="15"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar mensaje">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
